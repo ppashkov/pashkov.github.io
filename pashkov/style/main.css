@@ -21,12 +21,19 @@
       border-radius: 100%;
       background-color: #fff;
       background-size: cover; }
+      @media only screen and (max-width: 480px) {
+        .me .s1_photo .photo {
+          width: 250px;
+          height: 250px; } }
   .me .s1_name {
     margin-top: 50px;
     color: white;
     text-align: center;
     font-size: 50px;
     font-family: sans-serif; }
+    @media only screen and (max-width: 480px) {
+      .me .s1_name {
+        font-size: 35px; } }
   .me .s1_info {
     width: 80%;
     margin-top: 40px;
@@ -74,8 +81,8 @@
         transition: 0.2s; }
         @media only screen and (max-width: 480px) {
           .skills .skills_row .skill .skill_ico {
-            width: 120px;
-            height: 120px; } }
+            width: 105px;
+            height: 105px; } }
         .skills .skills_row .skill .skill_ico:hover {
           filter: grayscale(0);
           transition: 0.2s; }
@@ -111,6 +118,9 @@
     font-size: 30px;
     color: white;
     font-family: sans-serif; }
+    @media only screen and (max-width: 480px) {
+      .wtl .s3_goal1 {
+        font-size: 23px; } }
 
 .ghlink {
   width: 200px;
