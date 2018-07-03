@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.me {
+  width: 100%;
+  height: 100vh;
+  background-color: #222222;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+  .me .s1_photo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; }
+    .me .s1_photo .photo {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      background-color: #fff;
+      background-size: cover; }
+  .me .s1_name {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif; }
+  .me .s1_info {
+    width: 80%;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 22px; }
+
+.skills {
+  width: 100%;
+  height: 100vh;
+  background-color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+  .skills .s2_name {
+    text-shadow: 1px 1px 20px #222222;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white; }
+  .skills .skills_row {
+    margin-top: 80px;
+    width: 100%;
+    height: 250px;
+    display: flex; }
+    .skills .skills_row .skill {
+      width: 16.6%;
+      height: 100%; }
+      .skills .skills_row .skill .skill_ico {
+        margin: auto;
+        width: 190px;
+        height: 190px;
+        border-radius: 100%;
+        background-size: cover;
+        filter: grayscale(1);
+        transition: 0.2s; }
+        .skills .skills_row .skill .skill_ico:hover {
+          filter: grayscale(0);
+          transition: 0.2s; }
+
+.wtl {
+  width: 100%;
+  height: 100vh;
+  background-color: #222222;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .wtl .goal {
+    padding: 10px;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .wtl .s3_name {
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 20px #222222;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white; }
+  .wtl .s3_goal1 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
