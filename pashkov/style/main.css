@@ -78,6 +78,7 @@
   align-items: center;
   justify-content: center; }
   .wtl .goal {
+    margin-top: 100px;
     padding: 10px;
     width: 90%;
     height: 30%;
@@ -99,5 +100,16 @@
     font-size: 30px;
     color: white;
     font-family: sans-serif; }
+
+.ghlink {
+  width: 200px;
+  height: 60px;
+  background-image: url(../img/github-600.png);
+  background-size: cover;
+  transition: 0.3s; }
+  .ghlink:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    filter: contrast(150%); }
 
 /*# sourceMappingURL=main.css.map */
