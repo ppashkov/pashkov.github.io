@@ -2,24 +2,38 @@
   margin: 0;
   padding: 0; }
 
+.me2 {
+  width: 80%;
+  margin: auto;
+  display: table-cell;
+  vertical-align: middle; }
+
+.s1bg {
+  position: absolute;
+  width: 100%;
+  height: 300vh;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0; }
+
 .me {
   width: 100%;
   height: 100vh;
-  background-color: #222222;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center; }
+  background-color: rgba(22, 22, 22, 0.8);
+  position: relative;
+  z-index: 1;
+  display: table; }
   @media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
     .me {
       flex-wrap: nowrap;
       align-items: center; } }
   .me .s1_photo {
+    margin: auto;
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center; }
+    height: auto; }
     .me .s1_photo .photo {
+      margin: auto;
       width: 300px;
       height: 300px;
       border-radius: 100%;
@@ -61,6 +75,7 @@
       .me .s1_name {
         font-size: 30px; } }
   .me .s1_info {
+    margin: auto;
     width: 80%;
     margin-top: 40px;
     color: white;
@@ -84,12 +99,11 @@
 .skills {
   width: 100%;
   height: 100vh;
-  background-color: #333333;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center; }
+  background-color: rgba(12, 12, 12, 0.8);
+  position: relative;
+  z-index: 2; }
   .skills .s2_name {
+    padding-top: 100px;
     text-shadow: 1px 1px 20px #222222;
     text-align: center;
     font-size: 40px;
@@ -104,14 +118,15 @@
   .skills .skills_row {
     margin-top: 80px;
     width: 100%;
-    height: 250px;
-    display: flex; }
+    height: 250px; }
     @media only screen and (max-width: 480px) {
       .skills .skills_row {
         flex-wrap: wrap; } }
     .skills .skills_row .skill {
       width: 16.6%;
-      height: 100%; }
+      height: 100%;
+      display: block;
+      float: left; }
       @media only screen and (max-width: 480px) {
         .skills .skills_row .skill {
           width: 33%;
@@ -151,20 +166,20 @@
 .wtl {
   width: 100%;
   height: 100vh;
-  background-color: #222222;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
-  .wtl .goal {
-    margin-top: 100px;
-    padding: 10px;
+  display: table;
+  background-color: rgba(22, 22, 22, 0.8);
+  position: relative;
+  z-index: 2; }
+  .wtl .goalm {
     width: 90%;
-    height: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.2); }
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle; }
+  .wtl .goal {
+    margin: auto;
+    width: 90%;
+    padding: 30px;
+    height: auto; }
     @media only screen and (min-width: 1900px) and (max-width: 2560px) {
       .wtl .goal {
         padding: 30px; } }
@@ -185,7 +200,8 @@
   .wtl .s3_goal1 {
     text-align: center;
     width: 100%;
-    font-size: 30px;
+    margin-top: 30px;
+    font-size: 35px;
     color: white;
     font-family: sans-serif; }
     @media only screen and (max-width: 480px) {
@@ -199,11 +215,14 @@
         font-size: 25px; } }
 
 .ghlink {
-  width: 200px;
-  height: 60px;
+  margin: auto;
+  margin-top: 40px;
+  width: 150px;
+  height: 45px;
   background-image: url(../img/github-600.png);
   background-size: cover;
-  transition: 0.3s; }
+  transition: 0.3s;
+  filter: invert(1); }
   @media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
     .ghlink {
       width: 150px;
@@ -211,6 +230,6 @@
   .ghlink:hover {
     transform: scale(1.03);
     transition: 0.3s;
-    filter: contrast(150%); }
+    filter: invert(0.8); }
 
 /*# sourceMappingURL=main.css.map */
