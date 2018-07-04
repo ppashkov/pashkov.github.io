@@ -41,6 +41,10 @@
         .me .s1_photo .photo {
           width: 600px;
           height: 600px; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        .me .s1_photo .photo {
+          width: 150px;
+          height: 150px; } }
   .me .s1_name {
     margin-top: 50px;
     color: white;
@@ -70,6 +74,12 @@
       .me .s1_info {
         font-size: 20px;
         padding: 20px; } }
+@inlucde respond-to(oldmobile) {
+  .me .s1_info {
+    font-size: 15px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+      .me .s1_info {
+        font-size: 20px; } }
 
 .skills {
   width: 100%;
@@ -106,6 +116,10 @@
         .skills .skills_row .skill {
           width: 33%;
           height: 60%; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        .skills .skills_row .skill {
+          width: 50%;
+          height: 40%; } }
       .skills .skills_row .skill .skill_ico {
         margin: auto;
         width: 190px;
@@ -126,6 +140,10 @@
           .skills .skills_row .skill .skill_ico {
             width: 100px;
             height: 100px; } }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+          .skills .skills_row .skill .skill_ico {
+            width: 90px;
+            height: 90px; } }
         .skills .skills_row .skill .skill_ico:hover {
           filter: grayscale(0);
           transition: 0.2s; }

@@ -9,6 +9,9 @@ $large: 1024px;
   @else if $media == mobile-ls {
     @media only screen and (max-width: $small) and (orientation: landscape) { @content; }
   }
+  @else if $media == oldmobile {
+    @media only screen  and (min-device-width : 320px)  and (max-device-width : 568px) { @content; }
+  }
   @else if $media == medium-screens {
     @media only screen and (min-width: $small + 1) and (max-width: $medium - 1) { @content; }
   }
