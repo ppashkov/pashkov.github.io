@@ -7,14 +7,30 @@
 		<title>PASHKOV</title>
 		<link rel="stylesheet" href="style/main.css">
 		<style type="text/css">
-			::-webkit-scrollbar { 
-    		display: none; }
+			 ::-webkit-scrollbar{
+    		width:12px;
+    		background-color: #555555;
+				}
+
+			::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #333333;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #222222;
+}
 		</style>
+		<link rel="stylesheet" href="style/animate.css">
+		<link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
+
 	</head>
 	<body>
 		<main>
 			<div class="s1bg"></div>
-			<section class="me">
+			<section class="me anchor">
 
 				<div class="me2">
 					<div class="s1_photo"><div class="photo" style="background-image: url(img/photo.jpg);"></div></div>
@@ -23,10 +39,10 @@
 				
 				</div>
 			</section>
-			<section class="skills">
+			<section class="skills anchor">
 					<div class="s2_name">Навыки:</div>
 					<div class="skills_row">
-						<div class="skill">
+						<div class="skill ">
 							<div class="skill_ico" style="background-image: url(img/html5.png)"></div></div>
 						<div class="skill">
 							<div class="skill_ico" style="background-image: url(img/css3.png);"></div></div>
@@ -36,11 +52,11 @@
 							<div class="skill_ico" style="background-image: url(img/js.png);"></div></div>
 						<div class="skill">
 							<div class="skill_ico" style="background-image: url(img/jq.png);"></div></div>
-						<div class="skill">
+						<div class="skill elem">
 							<div class="skill_ico" style="background-image: url(img/gulp.png);"></div></div>
 					</div>
 			</section>
-			<section class="wtl">
+			<section class="wtl anchor">
 				<div class="goalm">
 					<div class="goal">
 					<div class="s3_name">Цель:</div>
@@ -51,7 +67,20 @@
 				<a href="https://github.com/ppashkov/pashkov.github.io"><div class="ghlink"></div></a>
 				</div>
 			</section>
+			<section class="content">
+					<div class="s4_name">Почему WEB разработка?</div>
+					<div class="s4_info">
+						Интернет — это почти 3,5 миллиарда пользователей и свыше миллиарда сайтов. Стремительное развитие информационных технологий привело к появлению профессий, о которых 10 лет назад никто даже не думал. Верхние строчки в рейтингах самых востребованных и высокооплачиваемых IT-специальностей занимает профессия веб-разработчика.
+					</div>
+			</section>
 				
 		</main>
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+
 	</body>
 </html>

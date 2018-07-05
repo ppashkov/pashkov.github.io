@@ -1,5 +1,6 @@
 @import "mediaq.scss"
-
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+@import url('https://fonts.googleapis.com/css?family=Pacifico')
 *
 	margin: 0
 	padding: 0
@@ -13,7 +14,7 @@
 .s1bg
 	position: absolute
 	width: 100%
-	height: 300vh
+	height: 400vh
 	background-image: url(../img/bg2.jpg)
 	background-size: cover
 	background-repeat: no-repeat
@@ -22,7 +23,7 @@
 .me
 	width: 100%
 	height: 100vh
-	background-color: rgba(22,22,22,0.80)
+	background-color: rgba(20,20,20,0.80)
 	position: relative
 	z-index: 1
 	display: table
@@ -68,7 +69,7 @@
 		color: white
 		text-align: center
 		font-size: 50px
-		font-family: sans-serif
+		font-family: 'Scada', sans-serif
 		@include respond-to(mobile)
 			font-size: 35px
 		@include respond-to(max)
@@ -83,7 +84,7 @@
 		margin-top: 40px
 		color: white
 		text-align: center
-		font-family: sans-serif
+		font-family: 'Scada', sans-serif
 		font-size: 22px
 
 		@include respond-to(max)
@@ -95,10 +96,6 @@
 			font-size: 15px
 		@include respond-to(oldmobile)
 			font-size: 20px
-		
-		
-
-
 
 .skills
 	width: 100%
@@ -107,13 +104,14 @@
 	position: relative
 	z-index: 2
 
+
 	
 	.s2_name
 		padding-top: 100px
 		text-shadow: 1px 1px 20px #222222
 		text-align: center
 		font-size: 40px
-		font-family: sans-serif
+		font-family: 'Scada', sans-serif
 		color: white
 		@include respond-to(max)
 			font-size: 80px
@@ -123,6 +121,7 @@
 		margin-top: 80px
 		width: 100%
 		height: 250px
+
 		
 		@include respond-to(mobile)
 			flex-wrap: wrap
@@ -169,9 +168,10 @@
 	width: 100%
 	height: 100vh
 	display: table
-	background-color: rgba(22,22,22,0.80)
+	background-color: rgba(20,20,20,0.80)
 	position: relative
 	z-index: 2
+	font-family: 'Scada', sans-serif
 
 	
 	.goalm
@@ -196,7 +196,6 @@
 		text-shadow: 1px 1px 20px #222222
 		text-align: center
 		font-size: 40px
-		font-family: sans-serif
 		color: white
 		@include respond-to(max)
 			font-size: 70px
@@ -208,7 +207,6 @@
 		margin-top: 30px
 		font-size: 35px
 		color: white
-		font-family: sans-serif
 		@include respond-to(mobile)
 			font-size: 23px
 		@include respond-to(max)
@@ -233,3 +231,42 @@
 		transform: scale(1.03)
 		transition: .3s
 		filter: invert(0.80)
+
+.content
+	width: 100%
+	height: 100vh
+	background-color: rgba(15,15,15,0.80)
+	display: table-cell
+	vertical-align: middle
+	position: relative
+	z-index: 2
+
+
+.s4_name
+	height: 100px
+	line-height: 100px
+	text-align: center
+	font-size: 40px
+	font-family: 'Scada', sans-serif		
+	color: white
+	@include respond-to(max)
+		font-size: 70px
+
+.s4_info
+	margin: auto
+	width: 80%
+	margin-top: 40px
+	color: white
+	text-align: center
+	font-family: 'Scada', sans-serif
+	font-size: 30px
+
+	@include respond-to(max)
+		font-size: 35px
+	@include respond-to(medium-screens-ls)
+		font-size: 20px
+		padding: 20px
+	@inlucde respond-to(oldmobile)
+		font-size: 15px
+	@include respond-to(oldmobile)
+		font-size: 20px
