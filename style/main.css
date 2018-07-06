@@ -91,9 +91,9 @@
       .me .s1_info {
         font-size: 20px;
         padding: 20px; } }
-@inlucde respond-to(oldmobile) {
-  .me .s1_info {
-    font-size: 15px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .me .s1_info {
+        font-size: 30px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
       .me .s1_info {
         font-size: 20px; } }
@@ -124,6 +124,9 @@
     @media only screen and (max-width: 480px) {
       .skills .skills_row {
         flex-wrap: wrap; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .skills .skills_row {
+        flex-wrap: wrap; } }
     .skills .skills_row .skill {
       width: 16.6%;
       height: 100%;
@@ -137,6 +140,10 @@
         .skills .skills_row .skill {
           width: 50%;
           height: 40%; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .skills .skills_row .skill {
+          width: 33%;
+          height: 100%; } }
       .skills .skills_row .skill .skill_ico {
         margin: auto;
         width: 190px;
@@ -161,6 +168,10 @@
           .skills .skills_row .skill .skill_ico {
             width: 90px;
             height: 90px; } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          .skills .skills_row .skill .skill_ico {
+            width: 180px;
+            height: 180px; } }
         .skills .skills_row .skill .skill_ico:hover {
           filter: grayscale(0);
           transition: 0.2s; }
@@ -180,7 +191,6 @@
     vertical-align: middle; }
   .wtl .goal {
     margin: auto;
-    width: 90%;
     padding: 30px;
     height: auto; }
     @media only screen and (min-width: 1900px) and (max-width: 2560px) {
@@ -252,6 +262,9 @@
   @media only screen and (min-width: 1900px) and (max-width: 2560px) {
     .s4_name {
       font-size: 70px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .s4_name {
+      font-size: 20px; } }
 
 .s4_info {
   margin: auto;
@@ -268,11 +281,8 @@
     .s4_info {
       font-size: 20px;
       padding: 20px; } }
-@inlucde respond-to(oldmobile) {
-  .s4_info {
-    font-size: 15px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
     .s4_info {
-      font-size: 20px; } }
+      font-size: 17px; } }
 
 /*# sourceMappingURL=main.css.map */

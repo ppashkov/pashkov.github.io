@@ -5,6 +5,8 @@
 	margin: 0
 	padding: 0
 
+
+
 .me2
 	width: 80%
 	margin: auto
@@ -92,8 +94,8 @@
 		@include respond-to(medium-screens-ls)
 			font-size: 20px
 			padding: 20px
-		@inlucde respond-to(oldmobile)
-			font-size: 15px
+		@include respond-to(tablet)
+			font-size: 30px
 		@include respond-to(oldmobile)
 			font-size: 20px
 
@@ -125,6 +127,8 @@
 		
 		@include respond-to(mobile)
 			flex-wrap: wrap
+		@include respond-to(tablet)
+			flex-wrap: wrap
 			
 
 		.skill
@@ -138,6 +142,9 @@
 			@include respond-to(oldmobile)
 				width: 50%
 				height: 40%
+			@include respond-to(tablet)
+				width: 33%
+				height: 100%
 
 			.skill_ico
 				margin: auto
@@ -159,6 +166,9 @@
 				@include respond-to(oldmobile)
 					width: 90px
 					height: 90px
+				@include respond-to(tablet)
+					width: 180px
+					height: 180px
 				&:hover
 					filter: grayscale(0)
 					transition: .2s 
@@ -182,10 +192,8 @@
 
 	.goal
 		margin: auto
-		width: 90%
 		padding: 30px
 		height: auto
-
 		@include respond-to(max)
 			padding: 30px
 
@@ -251,6 +259,8 @@
 	color: white
 	@include respond-to(max)
 		font-size: 70px
+	@include respond-to(oldmobile)
+		font-size: 20px
 
 .s4_info
 	margin: auto
@@ -266,7 +276,6 @@
 	@include respond-to(medium-screens-ls)
 		font-size: 20px
 		padding: 20px
-	@inlucde respond-to(oldmobile)
-		font-size: 15px
 	@include respond-to(oldmobile)
-		font-size: 20px
+		font-size: 17px
+	

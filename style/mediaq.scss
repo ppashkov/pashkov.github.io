@@ -19,7 +19,7 @@ $large: 1024px;
     @media only screen and (min-width: $small + 1) and (max-width: $medium - 1) and (orientation: landscape) { @content; }
   }
   @else if $media == tablet {
-    @media only screen and (min-width: $medium + 1) and (max-width: $large - 1) { @content; }
+    @media only screen and (min-width: $medium) and (max-width: $large) { @content; }
   }
   @else if $media == tablet-ls {
     @media only screen and (min-width: $medium + 1) and (max-width: $large - 1) and (orientation: landscape) { @content; }
