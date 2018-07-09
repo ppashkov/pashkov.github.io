@@ -21,6 +21,8 @@
 	background-size: cover
 	background-repeat: no-repeat
 	z-index: 0
+	@include respond-to(oldmobile)
+		height: 510vh
 
 .me
 	width: 100%
@@ -52,8 +54,8 @@
 				width: 250px
 				height: 250px
 			@include respond-to(medium-screens-ls)
-				width: 250px
-				height: 250px
+				width: 150px
+				height: 150px
 			@include respond-to(wide-screens)
 				width: 300px
 				height: 300px
@@ -61,6 +63,10 @@
 				width: 600px
 				height: 600px
 			@include respond-to(oldmobile)
+				width: 150px
+				height: 150px
+			@include respond-to(tablet-ls)
+				margin-top: 20px
 				width: 150px
 				height: 150px
 				
@@ -74,9 +80,14 @@
 		font-family: 'Scada', sans-serif
 		@include respond-to(mobile)
 			font-size: 35px
+		@include respond-to(oldmobile)
+			margin-top: 10px
 		@include respond-to(max)
 			font-size: 80px
 		@include respond-to(medium-screens-ls)
+			font-size: 30px
+		@include respond-to(tablet-ls)
+			margin-top: 10px
 			font-size: 30px
 		
 
@@ -93,11 +104,14 @@
 			font-size: 35px
 		@include respond-to(medium-screens-ls)
 			font-size: 20px
-			padding: 20px
 		@include respond-to(tablet)
 			font-size: 30px
 		@include respond-to(oldmobile)
 			font-size: 20px
+			margin-top: 10px
+		@include respond-to(tablet-ls)
+			font-size: 20px
+			margin-top: 10px
 
 .skills
 	width: 100%
@@ -105,7 +119,8 @@
 	background-color: rgba(12,12,12,0.80)
 	position: relative
 	z-index: 2
-
+	@include respond-to(oldmobile)
+		height: 200vh
 
 	
 	.s2_name
@@ -117,8 +132,10 @@
 		color: white
 		@include respond-to(max)
 			font-size: 80px
-		@include respond-to(medium-screens-ls)
-			margin-top: 70px
+		@include respond-to(tablet-ls)
+			font-size: 30px
+			padding-top: 20px
+	
 	.skills_row
 		margin-top: 80px
 		width: 100%
@@ -129,11 +146,12 @@
 			flex-wrap: wrap
 		@include respond-to(tablet)
 			flex-wrap: wrap
+
 			
 
 		.skill
 			width: 16.6%
-			height: 100%
+			height: auto
 			display: block
 			float: left
 			@include respond-to(mobile)
@@ -145,6 +163,9 @@
 			@include respond-to(tablet)
 				width: 33%
 				height: 100%
+			@include respond-to(tablet-ls)
+				width: 16.6%
+				height: auto
 
 			.skill_ico
 				margin: auto
@@ -169,6 +190,9 @@
 				@include respond-to(tablet)
 					width: 180px
 					height: 180px
+				@include respond-to(tablet-ls)
+					width: 100px
+					height: 100px
 				&:hover
 					filter: grayscale(0)
 					transition: .2s 
@@ -209,6 +233,8 @@
 			font-size: 70px
 		@include respond-to(medium-screens-ls)
 			font-size: 25px
+		@include respond-to(tablet-ls)
+			font-size: 30px
 	.s3_goal1
 		text-align: center
 		width: 100%
@@ -221,7 +247,8 @@
 			font-size: 40px
 		@include respond-to(medium-screens-ls)
 			font-size: 25px
-
+		@include respond-to(tablet-ls)
+			font-size: 25px
 
 .ghlink
 	margin: auto
@@ -248,7 +275,8 @@
 	vertical-align: middle
 	position: relative
 	z-index: 2
-
+	@include respond-to(oldmobile)
+		height: 110vh
 
 .s4_name
 	height: 100px
@@ -261,6 +289,8 @@
 		font-size: 70px
 	@include respond-to(oldmobile)
 		font-size: 20px
+	@include respond-to(tablet-ls)
+		font-size: 30px
 
 .s4_info
 	margin: auto
@@ -278,4 +308,5 @@
 		padding: 20px
 	@include respond-to(oldmobile)
 		font-size: 17px
-	
+	@include respond-to(tablet-ls)
+		font-size: 20px
