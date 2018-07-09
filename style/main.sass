@@ -21,9 +21,7 @@
 	background-size: cover
 	background-repeat: no-repeat
 	z-index: 0
-	@include respond-to(oldmobile)
-		height: 510vh
-
+	
 .me
 	width: 100%
 	height: 100vh
@@ -56,6 +54,7 @@
 			@include respond-to(medium-screens-ls)
 				width: 150px
 				height: 150px
+				margin-top: 20px
 			@include respond-to(wide-screens)
 				width: 300px
 				height: 300px
@@ -86,6 +85,7 @@
 			font-size: 80px
 		@include respond-to(medium-screens-ls)
 			font-size: 30px
+			margin-top: 10px
 		@include respond-to(tablet-ls)
 			margin-top: 10px
 			font-size: 30px
@@ -104,27 +104,34 @@
 			font-size: 35px
 		@include respond-to(medium-screens-ls)
 			font-size: 20px
+			margin-top: 10px
 		@include respond-to(tablet)
 			font-size: 30px
 		@include respond-to(oldmobile)
 			font-size: 20px
 			margin-top: 10px
+		@include respond-to(oldmobile-ls)
+			font-size: 15px
+			margin-top: 10px
 		@include respond-to(tablet-ls)
 			font-size: 20px
 			margin-top: 10px
+		
 
 .skills
-	width: 100%
+	width: 100vw
 	height: 100vh
 	background-color: rgba(12,12,12,0.80)
 	position: relative
 	z-index: 2
-	@include respond-to(oldmobile)
-		height: 200vh
+	display: table-cell
+	vertical-align: middle
 
+	@include respond-to(oldmobile)
+		height: 100vh
 	
 	.s2_name
-		padding-top: 100px
+		
 		text-shadow: 1px 1px 20px #222222
 		text-align: center
 		font-size: 40px
@@ -135,13 +142,20 @@
 		@include respond-to(tablet-ls)
 			font-size: 30px
 			padding-top: 20px
+		@include respond-to(oldmobile-ls)
+			font-size: 25px
+			padding-top: 20px
+		@include respond-to(medium-screens-ls)
+			font-size: 30px
+			padding-top: 20px
 	
 	.skills_row
 		margin-top: 80px
 		width: 100%
 		height: 250px
 
-		
+		@include respond-to(medium-screens-ls)
+			height: 200px
 		@include respond-to(mobile)
 			flex-wrap: wrap
 		@include respond-to(tablet)
@@ -160,6 +174,8 @@
 			@include respond-to(oldmobile)
 				width: 50%
 				height: 40%
+			@include respond-to(oldmobile-ls)
+				width: 16.6%
 			@include respond-to(tablet)
 				width: 33%
 				height: 100%
@@ -262,6 +278,7 @@
 	@include respond-to(medium-screens-ls)
 		width: 150px
 		height: 45px
+
 	&:hover
 		transform: scale(1.03)
 		transition: .3s
@@ -275,8 +292,7 @@
 	vertical-align: middle
 	position: relative
 	z-index: 2
-	@include respond-to(oldmobile)
-		height: 110vh
+	
 
 .s4_name
 	height: 100px
@@ -291,6 +307,9 @@
 		font-size: 20px
 	@include respond-to(tablet-ls)
 		font-size: 30px
+	@include respond-to(medium-screens-ls)
+		font-size: 30px
+	
 
 .s4_info
 	margin: auto
@@ -305,8 +324,10 @@
 		font-size: 35px
 	@include respond-to(medium-screens-ls)
 		font-size: 20px
-		padding: 20px
+
 	@include respond-to(oldmobile)
 		font-size: 17px
+	@include respond-to(oldmobile-ls)
+		margin-top: 0px
 	@include respond-to(tablet-ls)
 		font-size: 20px

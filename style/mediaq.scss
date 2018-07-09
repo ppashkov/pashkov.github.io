@@ -13,7 +13,7 @@ $large: 1024px;
     @media only screen  and (min-device-width : 320px)  and (max-device-width : 568px) { @content; }
   }
   @else if $media == oldmobile-ls {
-    @media only screen  and (min-device-width : 568px)  and (max-device-width : 320px) and (orientation: landscape) { @content; }
+    @media only screen  and (max-device-width : 568px) and (orientation: landscape) { @content; }
   }
   @else if $media == medium-screens {
     @media only screen and (min-width: $small + 1) and (max-width: $medium - 1) { @content; }
