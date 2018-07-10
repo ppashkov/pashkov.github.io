@@ -335,6 +335,13 @@
   }
 }
 
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+  .skills .skills_row {
+    height: 150px;
+    margin-top: 40px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .skills .skills_row {
     -ms-flex-wrap: wrap;
