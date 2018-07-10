@@ -441,6 +441,13 @@
   }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .skills .skills_row .skill .skill_ico {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .skills .skills_row .skill .skill_ico {
     width: 90px;
