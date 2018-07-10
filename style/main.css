@@ -448,6 +448,13 @@
   }
 }
 
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+  .skills .skills_row .skill .skill_ico {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .skills .skills_row .skill .skill_ico {
     width: 180px;
@@ -546,6 +553,12 @@
   }
 }
 
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+  .wtl .s3_name {
+    font-size: 25px;
+  }
+}
+
 @media only screen and (min-width: 2561px) and (max-width: 3400px) {
   .wtl .s3_name {
     font-size: 80px;
@@ -575,6 +588,12 @@
 @media only screen and (max-width: 480px) {
   .wtl .s3_goal1 {
     font-size: 23px;
+  }
+}
+
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+  .wtl .s3_goal1 {
+    font-size: 20px;
   }
 }
 
@@ -644,6 +663,13 @@
   .ghlink {
     width: 300px;
     height: 90px;
+  }
+}
+
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+  .ghlink {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 

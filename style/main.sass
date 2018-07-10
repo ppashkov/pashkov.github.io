@@ -236,6 +236,9 @@
 				@include respond-to(oldmobile)
 					width: 90px
 					height: 90px
+				@include respond-to(oldmobile-ls)
+					width: 75px
+					height: 75px
 				@include respond-to(tablet)
 					width: 180px
 					height: 180px
@@ -293,6 +296,8 @@
 			font-size: 25px
 		@include respond-to(tablet-ls)
 			font-size: 30px
+		@include respond-to(oldmobile-ls)
+			font-size: 25px
 		@include respond-to(max2)
 			font-size: 80px
 		@include respond-to(max3)
@@ -307,6 +312,8 @@
 		color: white
 		@include respond-to(mobile)
 			font-size: 23px
+		@include respond-to(oldmobile-ls)
+			font-size: 20px
 		@include respond-to(max)
 			font-size: 40px
 		@include respond-to(medium-screens-ls)
@@ -340,6 +347,8 @@
 	@include respond-to(max2)
 		width: 300px
 		height: 90px
+	@include respond-to(oldmobile-ls)
+		transform: scale(0.8)
 	@include respond-to(max3)
 		transform: scale(2)
 	@include respond-to(max4)	
