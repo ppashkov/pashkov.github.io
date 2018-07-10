@@ -30,58 +30,65 @@
 
 	</head>
 	<body>
+		
 		<main>
-			<div class="s1bg"></div>
+			<div class="s1bg wow fadeIn" data-wow-delay=".5s"></div>
 			<section class="me anchor">
 
 				<div class="me2">
-					<div class="s1_photo"><div class="photo" style="background-image: url(img/photo.jpg);"></div></div>
-				<div class="s1_name">Павел Пашков</div>
-				<div class="s1_info">Студент, 19 лет. Учусь в Черноморском Национальном Университете имени Петра Могилы на факультете Компьютерных наук, кафедре Инженерии программного обеспечения. </div>
+					<div class="s1_photo wow fadeIn"><div class="photo" style="background-image: url(img/photo.jpg);"></div></div>
+				<div class="s1_name wow fadeIn" data-wow-delay=".2s">Павел Пашков</div>
+				<div class="s1_info wow fadeIn" data-wow-delay=".3s">Студент, 19 лет. Учусь в Черноморском Национальном Университете имени Петра Могилы на факультете Компьютерных наук, кафедре Инженерии программного обеспечения. </div>
 
 				</div>
 			</section>
 			<section class="skills">
-					<div class="s2_name">Навыки:</div>
+					<div class="s2_name wow slideInUp">Навыки:</div>
 					<div class="skills_row">
-						<div class="skill ">
+						<div class="skill wow fadeInUp">
 							<div class="skill_ico" style="background-image: url(img/html5.png)"></div></div>
-						<div class="skill">
+						<div class="skill wow fadeInUp" data-wow-delay=".1s">
 							<div class="skill_ico" style="background-image: url(img/css3.png);"></div></div>
-							<div class="skill">
+							<div class="skill wow fadeInUp" data-wow-delay=".2s">
 							<div class="skill_ico" style="background-image: url(img/sass.png);"></div></div>
-						<div class="skill">
+						<div class="skill wow fadeInUp" data-wow-delay=".3s">
 							<div class="skill_ico" style="background-image: url(img/js.png);"></div></div>
-						<div class="skill">
+						<div class="skill wow fadeInUp" data-wow-delay=".4s">
 							<div class="skill_ico" style="background-image: url(img/jq.png);"></div></div>
-						<div class="skill">
+						<div class="skill wow fadeInUp" data-wow-delay=".5s">
 							<div class="skill_ico" style="background-image: url(img/gulp.png);"></div></div>
 					</div>
 			</section>
 			<section class="wtl anchor">
 				<div class="goalm">
 					<div class="goal">
-					<div class="s3_name">Цель:</div>
-				<div class="s3_goal1">
+					<div class="s3_name wow fadeInUp">Цель:</div>
+				<div class="s3_goal1 wow fadeInUp" data-wow-delay=".1s">
 					На этой практике я хочу получить новые знания и опыт в сфере WEB разработки. 
 				</div>
 				</div>
-				<a href="https://github.com/ppashkov/pashkov.github.io"><div class="ghlink"></div></a>
+				<a href="https://github.com/ppashkov/pashkov.github.io"><div class="ghlink wow fadeInUp" data-wow-delay=".2s"></div></a>
 				</div>
 			</section>
 			<section class="content">
-					<div class="s4_name">Почему WEB разработка?</div>
-					<div class="s4_info">
+					<div class="s4_name wow fadeInUp">Почему WEB разработка?</div>
+					<div class="s4_info wow fadeInUp" data-wow-delay=".1s">
 						Интернет — это почти 3,5 миллиарда пользователей и свыше миллиарда сайтов. Стремительное развитие информационных технологий привело к появлению профессий, о которых 10 лет назад никто даже не думал. Верхние строчки в рейтингах самых востребованных и высокооплачиваемых IT-специальностей занимает профессия веб-разработчика.
+					</div>
+					<div class="gotop wow fadeInUp" data-wow-delay=".2s">
+							<a href="#"><img src="img/up.png" width="50px" height="50px" alt="" id="go-top"></a>
 					</div>
 			</section>
 				
 		</main>
-		<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+		
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+	  new WOW().init();
+  </script>
 
 
 	</body>
