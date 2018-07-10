@@ -5,6 +5,32 @@
 	margin: 0
 	padding: 0
 
+.panel
+	width: 80px
+	height: 40px
+	position: fixed
+	z-index: 5
+	left: 0
+	top: 0
+	background-color: rgba(22,22,22,0.60)
+	border-bottom-right-radius: 10px
+	display: flex
+	justify-content: space-around
+	align-items: center
+	.btn
+		margin: auto 
+		width: 28px
+		height: 28px
+		border-radius: 100%
+		background-size: cover
+		filter: grayscale(1)
+		transition: .3s
+		&:hover
+			filter: grayscale(0)
+
+.night-mode
+	filter: invert(90%)
+
 .me2
 	width: 80%
 	margin: auto
@@ -15,15 +41,24 @@
 	position: absolute
 	width: 100%
 	height: 400vh
-	background-image: url(../img/bg2.jpg)
+	background-image: url(../img/bg.jpg)
 	background-size: cover
 	background-repeat: no-repeat
 	z-index: 0
-	
+
+
+.me_day
+	width: 100%
+	height: 100vh
+	background-color: rgba(200,200,200,0.50)
+	position: relative
+	z-index: 1
+	display: table	
+	color: black
 .me
 	width: 100%
 	height: 100vh
-	background-color: rgba(20,20,20,0.80)
+	background: rgba(20,20,20,0.80)
 	position: relative
 	z-index: 1
 	display: table
@@ -146,8 +181,6 @@
 		height: 100vh
 	
 	.s2_name
-		
-		text-shadow: 1px 1px 20px #222222
 		text-align: center
 		font-size: 40px
 		font-family: 'Scada', sans-serif
@@ -265,7 +298,7 @@
 	width: 100%
 	height: 100vh
 	display: table
-	background-color: rgba(20,20,20,0.80)
+	background-color: rgba(25,25,25,0.80)
 	position: relative
 	z-index: 2
 	font-family: 'Scada', sans-serif
@@ -288,7 +321,6 @@
 	.s3_name
 		width: 100%
 		text-align: center
-		text-shadow: 1px 1px 20px #222222
 		text-align: center
 		font-size: 40px
 		color: white
@@ -363,7 +395,7 @@
 .content
 	width: 100%
 	height: 100vh
-	background-color: rgba(15,15,15,0.80)
+	background-color: rgba(20,20,20,0.85)
 	display: table-cell
 	vertical-align: middle
 	position: relative

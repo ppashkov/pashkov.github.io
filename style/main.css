@@ -5,6 +5,47 @@
   padding: 0;
 }
 
+.panel {
+  width: 80px;
+  height: 40px;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background-color: rgba(22, 22, 22, 0.6);
+  border-bottom-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .btn {
+  margin: auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  background-size: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.panel .btn:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.night-mode {
+  -webkit-filter: invert(90%);
+          filter: invert(90%);
+}
+
 .me2 {
   width: 80%;
   margin: auto;
@@ -16,16 +57,26 @@
   position: absolute;
   width: 100%;
   height: 400vh;
-  background-image: url(../img/bg2.jpg);
+  background-image: url(../img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
 }
 
+.me_day {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: relative;
+  z-index: 1;
+  display: table;
+  color: black;
+}
+
 .me {
   width: 100%;
   height: 100vh;
-  background-color: rgba(20, 20, 20, 0.8);
+  background: rgba(20, 20, 20, 0.8);
   position: relative;
   z-index: 1;
   display: table;
@@ -264,7 +315,6 @@
 }
 
 .skills .s2_name {
-  text-shadow: 1px 1px 20px #222222;
   text-align: center;
   font-size: 40px;
   font-family: 'Scada', sans-serif;
@@ -514,7 +564,7 @@
   width: 100%;
   height: 100vh;
   display: table;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(25, 25, 25, 0.8);
   position: relative;
   z-index: 2;
   font-family: 'Scada', sans-serif;
@@ -542,7 +592,6 @@
 .wtl .s3_name {
   width: 100%;
   text-align: center;
-  text-shadow: 1px 1px 20px #222222;
   text-align: center;
   font-size: 40px;
   color: white;
@@ -712,7 +761,7 @@
 .content {
   width: 100%;
   height: 100vh;
-  background-color: rgba(15, 15, 15, 0.8);
+  background-color: rgba(20, 20, 20, 0.85);
   display: table-cell;
   vertical-align: middle;
   position: relative;
