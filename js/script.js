@@ -18,8 +18,7 @@
    $("#go-top").scrollToTop();
   });
 
-
-  $(".day").click(function(){
+  function day(){
     $(".s1bg").css("background-image", "url(img/bg2.jpg)");
     $(".me").animate({
       backgroundColor: "rgba(180,180,180,0.60)",
@@ -37,12 +36,10 @@
       color: "black",
     }, 600);
     $(".ghlink").css("filter","invert(0)");
-   
-    
-  });
-  $(".night").click(function(){
-    
-    
+  };
+
+  function night(){
+
     $(".me").animate({
       backgroundColor: "rgba(20,20,20,0.80)",
     }, 600 );
@@ -61,13 +58,17 @@
     $(".ghlink").css("filter","invert(1)")
     $(".s1bg").css("background-image", "url(img/bg.jpg)");
   
+  };
+
+  $(".day").click(function(){
+   day();
+  });
+  $(".night").click(function(){
+   night();
   });
 
   var d = new Date();
-  var h = d.getHours();
-  var m = d.getMinutes();
- 
-  
-  if(h > 5) {
-  // code here
+  var h = d.getHours();  
+  if(h > 5 && h < 22) {
+    day();
   }
