@@ -70,6 +70,6 @@
 
   var d = new Date();
   var h = d.getHours();  
-  if(h > 5 && h < 22) {
+  if(h > 5 && h < 21) {
     day();
   }
