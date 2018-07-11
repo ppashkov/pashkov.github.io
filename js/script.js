@@ -73,3 +73,7 @@
   if(h > 5 && h < 21) {
     day();
   }
+  
+  window.onload = function(){
+    $(".s1bg").css("transition", ".5s");
+  }
