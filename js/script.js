@@ -36,6 +36,7 @@
       color: "black",
     }, 600);
     $(".ghlink").css("filter","invert(0)");
+   
   };
 
   function night(){
