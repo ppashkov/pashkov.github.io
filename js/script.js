@@ -82,8 +82,9 @@
     }
  if(h>5 && h < 21){
   if(h != 20){
-    var nh = (((21 - h)*60 + (60- m))*60+(60 - s))*1000;
+    var nh = (((21 - h)*60 -(60- m))*60+(60 - s))*1000;
     setTimeout(night, nh);
+    console.log(nh);
   } else if (h == 20){
       if(m !=59){
         var nhh = ((60 - m)*60 - s)*1000;
