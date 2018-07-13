@@ -13,10 +13,14 @@
     })
    }
   });
-  
+
   $(function() {
    $("#go-top").scrollToTop();
   });
+
+
+
+
 
   function day(){
     $(".s1bg").css("background-image", "url(img/bg2.jpg)");
@@ -69,11 +73,39 @@
   });
 
   var d = new Date();
-  var h = d.getHours();  
-  if(h > 5 && h < 21) {
-    day();
-  }
-  
+  var h = d.getHours();
+  var m = d.getMinutes(); 
+  var s = d.getSeconds(); 
+
+    if(h > 5 && h < 21) {
+      day();  
+    }
+ if(h>5 && h < 21){
+  if(h != 20){
+    var nh = (((21 - h)*60 + (60- m))*60+(60 - s))*1000;
+    setTimeout(night, nh);
+  } else if (h == 20){
+      if(m !=59){
+        var nhh = ((60 - m)*60 - s)*1000;
+        setTimeout(night, nhh)
+      } else if(m == 59){
+        var nm = (60 - s)*1000;
+        setTimeout(night, nm)
+};
+};
+ }/* else{
+    if(h !=4){
+
+    } else if (h==4){
+      if (m!=59){
+
+      }else if(m ==59){
+
+      }
+    }
+ }
+*/
+
   window.onload = function(){
     $(".s1bg").css("transition", ".5s");
   }
