@@ -36,13 +36,19 @@
     $(".content").animate({
       backgroundColor: "rgba(160,160,160,0.75)",
     }, 600 );
+    $(".panel").animate({
+      backgroundColor: "rgba(22,22,22,0.60)",
+    }, 600 );
+    $(".panel_soc").animate({
+      backgroundColor: "rgba(22,22,22,0.60)",
+    }, 600 );
     $(".txt").animate({
       color: "black",
     }, 600);
     $(".ghlink").css("filter","invert(0)");
    
   };
-
+  
   function night(){
 
     $(".me").animate({
@@ -56,6 +62,12 @@
     }, 600 );
     $(".content").animate({
       backgroundColor: "rgba(20,20,20,0.85)",
+    }, 600 );
+    $(".panel").animate({
+      backgroundColor: "rgba(150,150,150,0.15)",
+    }, 600 );
+    $(".panel_soc").animate({
+      backgroundColor: "rgba(150,150,150,0.15)",
     }, 600 );
     $(".txt").animate({
       color: "white",
@@ -79,6 +91,8 @@
 
     if(h > 5 && h < 21) {
       day();  
+    }else{
+      night();
     }
  if(h>5 && h < 21){
   if(h != 20){
@@ -110,3 +124,22 @@
   window.onload = function(){
     $(".s1bg").css("transition", ".5s");
   }
+
+  var oldScrollY = 0;
+var div = document.getElementById("panel");
+
+window.onscroll = function() {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  var dY = scrolled - oldScrollY;
+  
+  if ( dY > 0 ){
+    div.className = "panel panel-top";
+    $('.panel_soc').css("top", "-40px");
+  } else {
+    div.className = "panel panel-bottom";
+    $('.panel_soc').css("top", "0");
+  }
+  
+  oldScrollY = scrolled;
+}
+

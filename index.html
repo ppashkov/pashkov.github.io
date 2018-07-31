@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
 		<title>PASHKOV</title>
-		<link rel="stylesheet" href="style/main.min.css">
+		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/animate.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
 
@@ -13,9 +13,16 @@
 		<div class="bg2" ></div>
 		<div class="bg1" ></div>
 		<main>
-			<div class="panel">
-				<div class="btn night" style="background-image: url(img/moon.png);"></div>
-				<div class="btn day" style="background-image: url(img/sun.jpg);"></div>
+			<div class="panel" id="panel">
+				<div class="btn night" style="background-image: url(img/moon.png);" title="Темная тема"></div>
+				<div class="btn day" style="background-image: url(img/sun.jpg);" title="Светлая тема"></div>
+			</div>
+
+			<div class="panel_soc">
+				<a href="http://t.me/pashk0v"><div class="btn" style="background-image: url(img/tg.png);" title="Telegram"></div></a>
+				<a href="skype:pol.pashkov?chat"><div class="btn" style="background-image: url(img/skype.png);" title="Skype"></div></a>
+				<a href="https://www.linkedin.com/in/pavel-pashkov-2a857a169/"><div class="btn" style="background-image: url(img/linkedin.png);" title="LinkedIn"></div></a>
+				<a href="tel:+380664588716" title="Phone"><div class="btn" style="background-image: url(img/phone.png);"></div></a>
 			</div>
 			<div class="s1bg wow fadeIn" data-wow-delay=".5s"></div>
 			<section class="me anchor">
@@ -31,17 +38,23 @@
 					<div class="s2_name wow slideInUp txt">Навыки:</div>
 					<div class="skills_row">
 						<div class="skill wow fadeInUp">
-							<div class="skill_ico" style="background-image: url(img/html5.png)"></div></div>
+							<div class="skill_ico" style="background-image: url(img/html5.png)"></div>
+						</div>
 						<div class="skill wow fadeInUp" data-wow-delay=".1s">
-							<div class="skill_ico" style="background-image: url(img/css3.png);"></div></div>
-							<div class="skill wow fadeInUp" data-wow-delay=".2s">
-							<div class="skill_ico" style="background-image: url(img/sass.png);"></div></div>
+							<div class="skill_ico" style="background-image: url(img/css3.png);"></div>
+						</div>
+						<div class="skill wow fadeInUp" data-wow-delay=".2s">
+							<div class="skill_ico" style="background-image: url(img/sass.png);"></div>
+						</div>
 						<div class="skill wow fadeInUp" data-wow-delay=".3s">
-							<div class="skill_ico" style="background-image: url(img/js.png);"></div></div>
+							<div class="skill_ico" style="background-image: url(img/js.png);"></div>
+						</div>
 						<div class="skill wow fadeInUp" data-wow-delay=".4s">
-							<div class="skill_ico" style="background-image: url(img/jq.png);"></div></div>
+							<div class="skill_ico" style="background-image: url(img/jq.png);"></div>
+						</div>
 						<div class="skill wow fadeInUp" data-wow-delay=".5s">
-							<div class="skill_ico" style="background-image: url(img/gulp.png);"></div></div>
+							<div class="skill_ico" style="background-image: url(img/gulp.png);"></div>
+						</div>
 					</div>
 			</section>
 			<section class="wtl anchor">
@@ -68,13 +81,14 @@
 		</main>
 		
 
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>	
 	<script src="js/jquery.animate-colors-min.js"></script>
 	<script src="js/wow.min.js"></script>
- <script src="js/script.min.js"></script>
+ <script src="js/script.js"></script>
   <script>
 	  new WOW().init();
   </script>
+
 
 
 	</body>

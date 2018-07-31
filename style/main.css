@@ -41,8 +41,7 @@
   z-index: 5;
   left: 0;
   top: 0;
-  background-color: rgba(22, 22, 22, 0.6);
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +50,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: top .2s ease-out 0s;
+  transition: top .2s ease-out 0s;
 }
 
 .panel .btn {
@@ -66,6 +67,53 @@
 }
 
 .panel .btn:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.panel-top {
+  top: -40px;
+}
+
+.panel-bottom {
+  top: 0;
+}
+
+.panel_soc {
+  width: auto;
+  height: 40px;
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: top .2s ease-out 0s;
+  transition: top .2s ease-out 0s;
+}
+
+.panel_soc .btn {
+  margin: auto;
+  margin-right: 6px;
+  margin-left: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  background-size: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.panel_soc .btn:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
@@ -191,7 +239,7 @@
   color: white;
   text-align: center;
   font-size: 50px;
-  font-family: 'Scada', sans-serif;
+  font-family: "Scada", sans-serif;
 }
 
 @media only screen and (max-width: 480px) {
@@ -250,7 +298,7 @@
   margin-top: 40px;
   color: white;
   text-align: center;
-  font-family: 'Scada', sans-serif;
+  font-family: "Scada", sans-serif;
   font-size: 22px;
 }
 
@@ -331,7 +379,7 @@
 .skills .s2_name {
   text-align: center;
   font-size: 40px;
-  font-family: 'Scada', sans-serif;
+  font-family: "Scada", sans-serif;
   color: white;
 }
 
@@ -583,7 +631,7 @@
   background-color: rgba(25, 25, 25, 0.8);
   position: relative;
   z-index: 2;
-  font-family: 'Scada', sans-serif;
+  font-family: "Scada", sans-serif;
 }
 
 .wtl .goalm {
@@ -789,7 +837,7 @@
   line-height: 100px;
   text-align: center;
   font-size: 40px;
-  font-family: 'Scada', sans-serif;
+  font-family: "Scada", sans-serif;
   color: white;
 }
 
@@ -841,7 +889,7 @@
   margin-top: 40px;
   color: white;
   text-align: center;
-  font-family: 'Scada', sans-serif;
+  font-family: "Scada", sans-serif;
   font-size: 30px;
 }
 

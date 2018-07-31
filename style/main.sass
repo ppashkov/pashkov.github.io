@@ -1,5 +1,5 @@
 @import "mediaq.scss"
-
+$font: 'Scada', sans-serif
 *
 	margin: 0
 	padding: 0
@@ -32,13 +32,41 @@
 	z-index: 5
 	left: 0
 	top: 0
-	background-color: rgba(22,22,22,0.60)
-	border-bottom-right-radius: 10px
+	border-bottom-right-radius: 5px
 	display: flex
 	justify-content: space-around
 	align-items: center
+	transition: top .2s ease-out 0s
 	.btn
 		margin: auto 
+		width: 28px
+		height: 28px
+		border-radius: 100%
+		background-size: cover
+		filter: grayscale(1)
+		transition: .3s
+		&:hover
+			filter: grayscale(0)
+.panel-top
+	top: -40px
+.panel-bottom
+	top: 0
+.panel_soc
+	width: auto
+	height: 40px
+	position: fixed
+	z-index: 5
+	right: 0
+	top: 0
+	border-bottom-left-radius: 5px
+	display: flex
+	justify-content: space-around
+	align-items: center
+	transition: top .2s ease-out 0s
+	.btn
+		margin: auto 
+		margin-right: 6px
+		margin-left: 6px
 		width: 28px
 		height: 28px
 		border-radius: 100%
@@ -125,7 +153,7 @@
 		color: white
 		text-align: center
 		font-size: 50px
-		font-family: 'Scada', sans-serif
+		font-family: $font
 		@include respond-to(mobile)
 			font-size: 35px
 		@include respond-to(oldmobile)
@@ -152,7 +180,7 @@
 		margin-top: 40px
 		color: white
 		text-align: center
-		font-family: 'Scada', sans-serif
+		font-family: $font
 		font-size: 22px 
 
 		@include respond-to(max)
@@ -178,7 +206,6 @@
 		@include respond-to(max4)	
 			font-size: 90px
 		
-
 .skills
 	width: 100vw
 	height: 100vh
@@ -194,7 +221,7 @@
 	.s2_name
 		text-align: center
 		font-size: 40px
-		font-family: 'Scada', sans-serif
+		font-family: $font
 		color: white
 		@include respond-to(max)
 			font-size: 80px
@@ -313,7 +340,7 @@
 	background-color: rgba(25,25,25,0.80)
 	position: relative
 	z-index: 2
-	font-family: 'Scada', sans-serif
+	font-family: $font
 
 	
 	.goalm
@@ -419,7 +446,7 @@
 	line-height: 100px
 	text-align: center
 	font-size: 40px
-	font-family: 'Scada', sans-serif		
+	font-family: $font		
 	color: white
 	@include respond-to(max)
 		font-size: 70px
@@ -442,7 +469,7 @@
 	margin-top: 40px
 	color: white
 	text-align: center
-	font-family: 'Scada', sans-serif
+	font-family: $font
 	font-size: 30px
 
 	@include respond-to(max)
